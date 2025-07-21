@@ -57,6 +57,6 @@ def simulate_mmm_data(start_date="2022-01-01", weeks=104, random_seed=42):
 
 if __name__ == "__main__":
     df = simulate_mmm_data()
-    os.makedirs("../data/simulated", exist_ok=True)
-    df.to_csv("../data/simulated/marketing_mmm_dataset.csv", index=False)
-    print(" Simulated MMM dataset saved to ../data/simulated/marketing_mmm_dataset.csv")
+    os.makedirs("./data/simulated", exist_ok=True)
+    df.to_csv("./data/simulated/marketing_mmm_dataset.csv", index=False)
+    print("Simulated MMM dataset saved to ./data/simulated/marketing_mmm_dataset.csv")
