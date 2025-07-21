@@ -18,3 +18,7 @@ Marketing teams often struggle to understand the true return on investment (ROI)
 - Model adstock effects (delayed impact of ads).
 - Simulate "what-if" scenarios (e.g., increase digital spend by 20%).
 - Optimize media budget to maximize ROI or total sales.
+
+---
+## Live Preview
+https://marketing-mix-modeling-mmm-with-budget-optimization-abup6wnkyp.streamlit.app/[https://marketing-mix-modeling-mmm-with-budget-optimization-abup6wnkyp.streamlit.app/]
