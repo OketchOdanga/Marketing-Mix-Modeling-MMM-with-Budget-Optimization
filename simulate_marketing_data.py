@@ -27,17 +27,17 @@ def simulate_mmm_data(start_date="2022-01-01", weeks=104, random_seed=42):
 
     # Generate Sales using a formula with noise
     base_sales = (
-        0.04 * tv_spend + 
+        0.042 * tv_spend + 
         0.05 * radio_spend +
-        0.07 * digital_spend + 
-        0.03 * influencer_spend +
+        0.65 * digital_spend + 
+        0.35 * influencer_spend +
         0.02 * ooh_spend + 
         0.5 * holidays + 
         0.3 * seasonality_index -
         0.03 * competitor_activity
     )
     noise = np.random.normal(0, 2000, weeks)
-    sales = (base_sales + noise).clip(min=10000)
+    sales = (base_sales + noise).clip(min=0)  # Ensure sales are non-negative
 
     # Combine into DataFrame
     df = pd.DataFrame({
